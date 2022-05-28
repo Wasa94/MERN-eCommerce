@@ -42,7 +42,7 @@ const ProductScreen = ({ history, match }) => {
                             Price: ${product.price}
                         </ListGroup.Item>
                         <ListGroup.Item>
-                            Description: ${product.description}
+                            Description: {product.description}
                         </ListGroup.Item>
                     </ListGroup>
                 </Col>
@@ -89,7 +89,7 @@ const ProductScreen = ({ history, match }) => {
                                 <Button onClick={addToCartHandler}
                                     className='btn-block' type='button' disabled={product.countInStock === 0}>
                                     Add To Cart
-                            </Button>
+                                </Button>
                             </ListGroup.Item>
                         </ListGroup>
                     </Card>
